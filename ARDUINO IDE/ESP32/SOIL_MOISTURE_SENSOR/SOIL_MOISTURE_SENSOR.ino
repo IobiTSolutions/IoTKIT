@@ -12,7 +12,7 @@ void loop()
 {
 
   moisture_val= analogRead(sensor_pin);
-  moisture_per = map(moisture_val,550,0,0,100);
+  moisture_per = map(moisture_val,4095,0,0,100);
   Serial.print("Moisture_val : ");
   Serial.print(moisture_val);
   Serial.print("  Moisture_per : ");
